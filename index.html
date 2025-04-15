@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claisty's Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .nav-list a {
+            font-weight: bold;
+        }
+
+    </style>
 </head>
-<body>
+<body class="home-page">
     <header>
         <div class="navbar">
             <nav class="nav-list">
@@ -15,23 +27,30 @@
                 </ul>
             </nav>
         </div>
-
-        <section id="home" class="home-container">
-            <div class="greet">
-                <h3>Get to know</h3>
-                <h1>Claisty Marsha Umboh</h1>
-                <img src="assets/kurai2.jpg" alt="Me" width="370" height="500">
-            </div>
-        </section>
     </header>
+
+<section id="home" class="home-container">
+    <div class="text-content">
+        <h3>Hello, I'm</h3>
+        <h1>Claisty Marsha Umboh</h1>
+        <p>A creative soul in the world of code and music 🎵</p>
+    </div>
+    <div class="image-content">
+        <img src="assets/clai3.jpg" alt="Claisty Photo" style="width: 400px; height: auto; aspect-ratio: 1/1; border-radius: 50%; object-fit: cover; display: block;">
+
+
+    </div>
+</section>
+
+
 
     <footer>
         <section class="footer-card">
             <h1>About</h1>
-            <p>This is Claisty Umboh's profile page, created for a web programming assignment.</p>
+            <p>This is Claisty's profile page, created for a web programming assignment.</p>
         </section>
 
-        <section class="footer-card">
+        <section class="footer">
             <h2>Links</h2>
             <div class="footer-links">
                 <ul>
@@ -43,5 +62,6 @@
             </div>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

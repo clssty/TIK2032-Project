@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.gosogleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="gallery-page">
     <header>
         <div class="navbar">
             <nav class="nav-list">
@@ -17,20 +22,32 @@
         </div>
     </header>
     <main>
-        <section id="gallery" class="gallery-container">
+        <section id="gallery">
             <h1>My Art Projects</h1>
-            <div class="photo-container">
-                <h3>2D</h3>
-                <img src="assets/Tak berjudul483 (1).png" alt="art1" width="370" height="500">
-                <img src="assets/Christmas2024.jpg" alt="art2" width="600" height="500">
-                <h3>GIF</h3>
-                <img src="assets/chiaki.gif" alt="gif1" width="300" height="500">
-                <img src="assets/persona2.gif" alt="gif2" width="500" height="500">
-                <h3>3D</h3>
-                <img src="assets/chiby4.png" alt="3d1" width="400" height="400">
-                <img src="assets/3d2.png" alt="3d3" width="800" height="400">
+            <div class="article-items">
+                <article>
+                    <h3>2D</h3>
+                    <img src="assets/Tak berjudul483 (1).png" alt="art1" width="370" height="500">
+                    <img src="assets/Christmas2024.jpg" alt="art2" width="600" height="500">
+                </article>
+            </div>
+            <div class="article-items">
+                <article>
+                    <h3>GIF</h3>
+                    <img src="assets/chiaki.gif" alt="gif1" width="300" height="500">
+                    <img src="assets/persona2.gif" alt="gif2" width="500" height="500">
+                </article>
+            </div>
+            <div class="article-items">
+                <article></article>
+                    <h3>3D</h3>
+                    <img src="assets/chiby4.png" alt="3d1" width="400" height="400">
+                    <img src="assets/3d2.png" alt="3d3" width="800" height="400">
+                </article>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
+</body>
 </body>
 </html>
