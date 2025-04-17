@@ -6,8 +6,15 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.gosogleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">    
 </head>
+<style>
+    .nav-list a {
+        font-weight: bold;
+    }
+
+</style>
+
 <body class="gallery-page">
     <header>
         <div class="navbar">
@@ -23,31 +30,48 @@
     </header>
     <main>
         <section id="gallery">
+            <div class="h1-gallery">
             <h1>My Art Projects</h1>
-            <div class="article-items">
+            <div class="h1-gallery">
+        <div class="article-container">
+            <div class="article-items-gallery">
                 <article>
                     <h3>2D</h3>
-                    <img src="assets/Tak berjudul483 (1).png" alt="art1" width="370" height="500">
-                    <img src="assets/Christmas2024.jpg" alt="art2" width="600" height="500">
+                    <div class="image-group-gallery">
+                    <img src="assets/Tak berjudul483 (1).png" alt="2D Artwork 1" width="370" height="500">
+                    <img src="assets/Christmas2024.jpg" alt="2D Artwork 2" width="600" height="500">
+                    </div>
+                    </article>
+                    </article>
                 </article>
             </div>
-            <div class="article-items">
+            <div class="article-items-gallery">
                 <article>
                     <h3>GIF</h3>
-                    <img src="assets/chiaki.gif" alt="gif1" width="300" height="500">
-                    <img src="assets/persona2.gif" alt="gif2" width="500" height="500">
+                    <div class="image-group-gallery">
+                    <img src="assets/chiaki.gif" alt="Animated GIF 1" width="300" height="500">
+                    <img src="assets/persona2.gif" alt="Animated GIF 2" width="500" height="500">
+                </div>
                 </article>
             </div>
-            <div class="article-items">
-                <article></article>
+            <div class="article-items-gallery">
+                <article>
                     <h3>3D</h3>
-                    <img src="assets/chiby4.png" alt="3d1" width="400" height="400">
-                    <img src="assets/3d2.png" alt="3d3" width="800" height="400">
+                    <div class="image-group-gallery">
+                    <img src="assets/chiby4.png" alt="3D Artwork 1" width="400" height="400">
+                    <img src="assets/3d2.png" alt="3D Artwork 2" width="800" height="400">
+                </div>
                 </article>
             </div>
+        </div>
         </section>
     </main>
+
+    <footer-gallery>
+        <div class="footer-content">
+            <p>&copy; 2025 Gallery Blog. All rights reserved.</p>
+        </div>
+    </footer-gallery>
     <script src="script.js"></script>
-</body>
 </body>
 </html>
