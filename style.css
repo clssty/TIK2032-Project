@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
+
 h1 {
   font-size: 2.5rem;
   text-align: center;
@@ -42,6 +43,16 @@ h2 {
   margin-bottom: 1rem;
   position: relative;
   margin-top: 1rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #4b3838;
+  margin: 1rem 0;
+  letter-spacing: 2px;
+  position: relative;
 }
 
 p {
@@ -121,7 +132,7 @@ footer {
 }
 
 footer-gallery {
-  background-color: #d88484;
+  background-color: #322323;
   padding: 2rem 0;
   text-align: center;
   margin-top: 4rem;
@@ -321,6 +332,14 @@ body.blog-page {
   padding: 1rem;
 }
 
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
 
 .image-group-gallery {
   display: flex;
@@ -335,13 +354,7 @@ body.blog-page {
 }
 
 
-.article-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  padding: 1rem;
-}
+
 
 
 
@@ -442,37 +455,26 @@ body.gallery-page {
   margin: 0;
   padding: 0;
   background-color: #ffb0b2;
-  color: #111111;
+  color: #b86767;
 }
 
 .gallery-page .navbar {
-  background-color: #fdb4a9;
+  background-color: #4b3838;
 }
 
-.gallery-container {
-  display: grid;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 10%;
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #0a0a0a, #ef767e);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #1a1a1a;
-  font-family: 'Pacifico', sans-serif;
-}
 
 
 
 
 .article-items-gallery {
   margin-bottom: 4rem;
-  background-color: #5d3636;
+  background-color: #f8eadf;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(103, 225, 255, 0.4);
-  transition: transform 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .article-items-gallery article {
   background-color: var(--card-bg-color);
@@ -508,7 +510,66 @@ body.gallery-page {
 }
 
 
-/*BONUSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+/*===================================
+  TAMBAHAN GALLERYYYYYY
+=====================================*/
+
+/* Container untuk gambar thumbnail */
+
+.thumbnail-container {
+  display: flex;
+  cursor: pointer;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+
+
+
+/* Gaya untuk gambar thumbnail */
+.thumbnail {
+  max-width: 200px;
+  transition: opacity 0.3s;
+}
+
+.thumbnail:hover {
+  opacity: 0.8;
+}
+
+/* Lightbox - tersembunyi secara default */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gambar di dalam lightbox */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid white;
+}
+
+/* Tombol tutup */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
 
 
 

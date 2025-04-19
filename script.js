@@ -1,11 +1,12 @@
 //wait load
 document.addEventListener('DOMContentLoaded', function() {
     // animation classes to blog articles
-    const articles = document.querySelectorAll('.article-items');
+    const articles = document.querySelectorAll('.article-items, .article-items-gallery, .text-content, .image-contenct');
     articles.forEach((article, index) => {
         article.style.setProperty('--animation-order', index);
         article.classList.add('fade-in');
     });
+
 
     // Smooth scrolling for nav link
     const navLinks = document.querySelectorAll('.nav-list a');
@@ -97,16 +98,32 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create dark mode toggle (even though the default is already dark)
     const body = document.body;
     
+    /*
     // Create the dark mode toggle button
     const darkModeToggle = document.createElement('button');
     darkModeToggle.classList.add('dark-mode-toggle');
     darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     darkModeToggle.setAttribute('title', 'Toggle Light/Dark Mode');
+    */
     
     body.appendChild(darkModeToggle);
     
     // Initialize dark mode state
     let isDarkMode = true; // Default is dark
+
+
+    /* -----------------------------------
+    EXPAND GAMBAR -> FOR GALLERYYYY
+     ------------------------------------*/
+
+     function openLightbox() {
+        document.getElementById('ImageLightbox').style.display = 'flex';
+     }
+
+     function closeLightbox() {
+        document.getElementById('ImageLightbox').style.display = 'none';
+     }
+
     
 
     
